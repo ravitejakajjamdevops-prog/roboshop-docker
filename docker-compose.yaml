@@ -24,6 +24,8 @@ services:
     build: ./frontend
     image: raviteja471/frontend:1.0.0
     container_name: frontend
+    ports:
+    - "80:80"
     depends_on:
       - catalogue
       - cart
